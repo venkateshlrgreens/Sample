@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.001" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Verify the adactin hotel login page" name="Verify using the valid credential" time="6.358">
+<system-out><![CDATA[
+Given User enters to the Adactin hotel page.................................passed
+When User enter "Rakeshg6199" and "Rakesh123"...............................passed
+And User clicks the login button............................................passed
+Then User shoud see the "Search Hotel" text.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the adactin hotel login page" name="Search for hotels" time="1.391">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.stepdefinition.StepDefinition.user_should_see_text(StepDefinition.java:115)
+	at ?.User should see "Select Hotel " text(file:///C:/Users/Venkatesh%20L%20R/Downloads/AdactinProject%20(2)/AdactinProject/FeatureFile/adactin.feature:35)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User sees "Search Hotel " text........................................passed
+When User selects "Melbourne" location......................................passed
+And User selects "Hotel Sunshine" hotel.....................................passed
+And User selects "Double" room..............................................passed
+And User selects "4 - Four" no of rooms.....................................passed
+And Users enters "16/04/2023" check in date.................................passed
+And Users enters "19/04/2023" check out date................................passed
+And Users selects "3 - Three" nos of adults.................................passed
+And User Selects "3 - Three" nos of childrens...............................passed
+And User clicks Search button...............................................passed
+Then User should see "Select Hotel " text...................................failed
+]]></system-out>
+</testcase>
+</testsuite>

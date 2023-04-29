@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.testrunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.59 s <<< FAILURE! - in org.testrunner.TestRunner
+Verify the adactin hotel login page.Search for hotels  Time elapsed: 1.439 s  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.stepdefinition.StepDefinition.user_should_see_text(StepDefinition.java:115)
+	at ✽.User should see "Select Hotel " text(file:///C:/Users/Venkatesh%20L%20R/Downloads/AdactinProject%20(2)/AdactinProject/FeatureFile/adactin.feature:35)
+
